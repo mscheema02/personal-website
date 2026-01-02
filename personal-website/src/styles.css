@@ -5,15 +5,17 @@
     --border: #e6e6e6;
     --card: #fafafa;
     --link: #111111;
+    --highlight: #e8f4f8;
   }
   
   :root[data-theme="dark"] {
-    --bg: #0b0b0b;
+    --bg: #000000;
     --text: #f1f1f1;
     --muted: #b5b5b5;
     --border: #222222;
     --card: #101010;
     --link: #f1f1f1;
+    --highlight: #1a2a2f;
   }
   
   * { box-sizing: border-box; }
@@ -30,7 +32,7 @@
   a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
   a:hover { opacity: 0.85; }
   
-  .page { max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  .page { max-width: 1300px; margin: 0 auto; padding: 28px 24px 60px; }
   
   .header {
     display: flex; align-items: center; justify-content: space-between; gap: 16px;
@@ -42,13 +44,14 @@
   .logo {
     width: 44px; height: 44px; object-fit: contain;
   }
-  .name { font-weight: 700; }
-  .meta { color: var(--muted); font-size: 0.95rem; }
+  .name { font-weight: 700; font-size: 1.25rem; }
+  .meta { color: var(--muted); font-size: 0.875rem; }
   
   .nav { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
   .themeBtn {
     border: 1px solid var(--border); background: var(--card); color: var(--text);
     border-radius: 10px; padding: 7px 10px; cursor: pointer;
+    font-size: 0.875rem;
   }
   .themeBtn:hover { opacity: 0.9; }
   
@@ -60,31 +63,180 @@
     scroll-margin-top: 100px;
   }
   #about { padding-top: 80px; }
-  .sectionTitle { margin: 0 0 10px; font-size: 1.2rem; }
-  .sectionBody p { margin: 8px 0; }
+  .sectionTitle { 
+    margin: 0 0 24px; 
+    font-size: 1.75rem; 
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .sectionBody p { margin: 8px 0; font-size: 1rem; line-height: 1.6; }
   .nameHighlight {
     font-weight: 700;
     transition: font-size 0.2s ease;
+    position: relative;
+    display: inline-block;
+    color: var(--text);
+    cursor: default;
   }
   .nameHighlight:hover {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 700;
+    cursor: default;
+    background: linear-gradient(
+      90deg,
+      var(--text) 0%,
+      var(--text) 30%,
+      rgba(255, 215, 0, 0.3) 40%,
+      rgba(255, 215, 0, 0.6) 45%,
+      rgba(255, 215, 0, 0.9) 50%,
+      rgba(255, 215, 0, 0.6) 55%,
+      rgba(255, 215, 0, 0.3) 60%,
+      var(--text) 70%,
+      var(--text) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 16s ease-in-out infinite;
+    transition: font-size 0.2s ease;
   }
   
-  .stack { display: flex; flex-direction: column; gap: 12px; }
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    50% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  :root[data-theme="dark"] .nameHighlight:hover {
+    background: linear-gradient(
+      90deg,
+      #f1f1f1 0%,
+      #f1f1f1 30%,
+      rgba(255, 215, 0, 0.4) 40%,
+      rgba(255, 215, 0, 0.7) 45%,
+      rgba(255, 215, 0, 1) 50%,
+      rgba(255, 215, 0, 0.7) 55%,
+      rgba(255, 215, 0, 0.4) 60%,
+      #f1f1f1 70%,
+      #f1f1f1 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 16s ease-in-out infinite;
+  }
+  
+  .stack { 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  
+  /* Default: 3 columns (each item spans 2 of 6 columns = 33.33%) */
+  .stack > * {
+    grid-column: span 2;
+  }
+  
+  /* For 1 item: full width (span all 6 columns) */
+  .stack > :only-child {
+    grid-column: 1 / -1;
+  }
+  
+  /* For 2 items: each takes half (span 3 of 6 columns = 50%) */
+  .stack > :nth-child(1):nth-last-child(2) {
+    grid-column: span 3;
+  }
+  .stack > :nth-child(2):nth-last-child(1) {
+    grid-column: span 3;
+  }
   
   .card {
     border: 1px solid var(--border); background: var(--card);
-    border-radius: 14px; padding: 14px;
+    border-radius: 14px; padding: 18px;
     scroll-margin-top: 100px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   }
   
-  .cardTitle { margin: 0; font-size: 1.05rem; }
-  .cardSubtitle { color: var(--muted); font-size: 0.95rem; margin-top: 3px; }
+  .card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    border-color: var(--text);
+  }
   
-  .bullets { margin: 10px 0 0; padding-left: 18px; }
+  :root[data-theme="dark"] .card:hover {
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.1);
+  }
   
-  .linkRow { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+  .projectCard {
+    cursor: pointer;
+  }
+  
+  .card.highlight {
+    animation: highlight-pulse 1.5s ease-out;
+  }
+  
+  @keyframes highlight-pulse {
+    0% {
+      background-color: var(--card);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+      background-color: var(--highlight);
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      background-color: var(--card);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .cardTitle { 
+    margin: 0 0 6px; 
+    font-size: 1.2rem; 
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .cardSubtitle { 
+    color: var(--muted); 
+    font-size: 0.875rem; 
+    margin-top: 4px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  
+  .bullets { 
+    margin: 0; 
+    padding-left: 20px; 
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .bullets li {
+    margin: 6px 0;
+  }
+  
+  .linkRow { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 14px; align-items: center; }
+  .linkRow a {
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .linkIcon {
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.2s ease;
+  }
+  .linkRow a:hover .linkIcon {
+    opacity: 0.85;
+  }
   
   .muted { color: var(--muted); }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
@@ -125,8 +277,21 @@
     opacity: 0.8;
   }
   
+  .expandSkillsText {
+    color: var(--muted);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    align-self: center;
+    padding: 6px 0;
+  }
+  .expandSkillsText:hover {
+    color: var(--text);
+    text-decoration: underline;
+  }
+  
   .itemSkills {
-    display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px;
+    display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
   }
   .itemSkillTag {
     padding: 4px 10px;
@@ -134,12 +299,16 @@
     border-radius: 6px;
     background: var(--bg);
     color: var(--muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-family: inherit;
   }
   
   .searchResults {
     margin-top: 24px;
+  }
+  .searchResults .cardTitle {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
   .searchResultList {
     list-style: none;
@@ -153,6 +322,7 @@
     color: var(--link);
     text-decoration: underline;
     text-underline-offset: 3px;
+    font-size: 0.95rem;
   }
   .searchResultLink:hover {
     opacity: 0.85;

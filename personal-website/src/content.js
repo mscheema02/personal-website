@@ -10,98 +10,150 @@ export const profile = {
     { label: "Resume (PDF)", href: "/resume.pdf" }
   ],
   about: [
-    "I'm Manvir Singh Cheema. I build reliable and organized systems.",
+    "Hey there! I'm Manvir Singh Cheema. I build simple, reliable and organized systems.",
   ],
   projects: [
     {
+        name: "Url Response",
+        subtitle: "HTML extraction tool for Data Analysis and Monitoring",
+        dates: "2024 - Current",
+        bullets: [
+            "I designed a  full web application (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) for max control, flexibility, cost-effectiveness, and scalability",
+            "Website allows users to extract HTML content from any website continously (allowing for monitoring of changes without being restricted), users can save the extracted HTML into a .html file  or directly upload to large context LLM for further processing and analysis",
+            "Designed to facilitate LLM-based analysis by providing clean HTML output that can be directly input into language models for information extraction and analysis",
+            "Refer to Github Repository for diagrams and more details"
+        ],
+        skills: [
+          "AWS Amplify", "AWS EC2", "AWS VPC", "AWS API Gateway", "AWS Lambda", "AWS DynamoDB", "AWS Route 53",
+          "React", "HTML", "JavaScript", "ES6+", "React Hooks", "React Router DOM", "Zustand", "Vite", "ESLint", "PostCSS", "Autoprefixer",
+          "Tailwind CSS", "DaisyUI", "CSS3",
+          "Axios", "Lucide React", "React Switch", "React Hot Toast",
+          "Stripe.js", "Stripe",
+          "Node.js", "Express.js",
+          "Supabase", "PostgreSQL", "Valkey", "Redis", "ioredis",
+          "JWT", "jsonwebtoken", "bcryptjs", "Cookie Parser",
+          "WebSockets", "ws",
+          "Cloudinary", "UUID", "PM2", "Nodemon",
+          "FastAPI", "Uvicorn", "Pydantic", "SQLite", "Xvfb",
+          "RESTful API", "Microservices Architecture", "Middleware Pattern", "Service Layer Pattern",
+          "WebSocket Real-time Communication", "Caching Strategy", "Error Handling",
+          "Environment-based Configuration", "Subscription Management", "CORS Configuration",
+          "Cookie-based Authentication", "Webhook Processing",
+          "GitLab", "SOLID Principles", "Design Patterns"
+        ],
+        links: [
+            { label: "Website", href: "https://www.urlresponse.com" },
+            { label: "Repository", href: "https://github.com/mscheema02/urlresponse-app-info" }
+        ]
+    },
+    {
+        name: "Personal Website",
+        subtitle: "Personal Website for Portfolio and Projects",
+        dates: "2023 - Current",
+        bullets: [
+          "Personal Website for Portfolio and Projects",
+          "Designed to showcase my skills and projects in a clean and organized manner",
+        ],
+        skills: ["Web Development", "HTML", "CSS", "JavaScript"],
+        links: [
+            { label: "Website", href: "https://www.manvirsinghcheema.com" },
+            { label: "Repository", href: "https://github.com/mscheema02/personal-website" }
+        ]
+    },
+    {
       name: "Applied Machine Learning",
       subtitle: "ML algorithms and data analysis implementations",
+      dates: "2025",
       bullets: [
-        "Implemented various machine learning models and techniques",
-        "Data preprocessing, model training, and evaluation pipelines",
-        "Jupyter notebooks with visualizations and insights"
+        "Machine learning project implementing classification and regression models for data analysis using scikit-learn and Jupyter notebooks",
+        "Built data preprocessing pipelines with feature engineering, handled imbalanced datasets using SMOTE resampling, and evaluated models with cross-validation",
+        "Accomplished accurate predictions as measured by model performance metrics by doing data preprocessing, feature engineering, and hyperparameter tuning"
       ],
-      skills: ["Python", "Machine Learning", "Jupyter", "NumPy", "Pandas"],
+      skills: ["Python 3", "Jupyter Notebook", "Google Colab", "NumPy", "Pandas", "scikit-learn", "imbalanced-learn", "Matplotlib", "ucimlrepo"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/applied-machine-learning" }
+        { label: "Repository", href: "https://github.com/mscheema02/applied-machine-learning" }
       ]
     },
     {
       name: "SLAM RRT Navigation",
       subtitle: "Robotics navigation using SLAM and RRT pathfinding",
+      dates: "2024",
       bullets: [
-        "Simultaneous Localization and Mapping system implementation",
-        "Rapidly-exploring Random Trees for path planning",
-        "Real-time robot navigation in unknown environments"
+        "Robotics navigation system enabling autonomous robot pathfinding in unknown environments using ROS2 and Gazebo simulations",
+        "Implemented SLAM for simultaneous mapping and localization, and RRT algorithms for path planning using Python with ROS2 message handling",
+        "Accomplished autonomous navigation as measured by successful path planning and obstacle avoidance by doing real-time map generation and optimal path finding"
       ],
-      skills: ["Python", "Robotics", "SLAM", "Path Planning", "Algorithms"],
+      skills: ["VMWare Workstation Pro", "Ubuntu 22.04", "ROS2", "Gazebo", "Python 3", "NumPy", "OpenCV", "ROS2 Messages"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/slam-rrt-navigation" }
+        { label: "Repository", href: "https://github.com/mscheema02/slam-rrt-navigation" }
       ]
     },
     {
       name: "Autonomous Driving with CNN",
       subtitle: "CNN-based control system with kinematic models",
+      dates: "2024",
       bullets: [
-        "Integrated convolutional neural networks with vehicle kinematics",
-        "End-to-end learning for autonomous vehicle control",
-        "Combined deep learning with physics-based modeling"
+        "Autonomous vehicle control system using deep learning CNNs integrated with inverse kinematics for end-to-end driving control in ROS2 and Gazebo",
+        "Trained CNN models with TensorFlow/Keras on sensor data, processed images with OpenCV, and integrated with ROS2 for real-time vehicle control",
+        "Accomplished autonomous driving control as measured by successful vehicle navigation and steering commands by doing CNN-based perception and kinematic control integration"
       ],
-      skills: ["Python", "Deep Learning", "CNN", "TensorFlow", "Kinematics"],
+      skills: ["VMWare Workstation Pro", "Ubuntu 22.04", "ROS2", "Gazebo", "Python 3", "TensorFlow", "Keras", "OpenCV", "cv_bridge", "Inverse Kinematics", "NumPy", "scikit-learn", "imutils"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/kinematics-and-cnn-autonomous-driving" }
+        { label: "Repository", href: "https://github.com/mscheema02/kinematics-and-cnn-autonomous-driving" }
       ]
     },
     {
       name: "Quantum Computing",
       subtitle: "Quantum algorithms and gate implementations",
+      dates: "2024",
       bullets: [
-        "Implemented Shor's and Grover's algorithms",
-        "Quantum gate operations and circuit design",
-        "Quantum computing fundamentals and applications"
+        "Implemented the notorious Shor's and Grover's algorithms using Qiskit for quantum circuit design and simulation",
+        "Built quantum circuits with gate operations, simulated quantum states using Qiskit Aer, and visualized probability distributions with Matplotlib",
       ],
-      skills: ["Python", "Quantum Computing", "Qiskit", "Algorithms"],
+      skills: ["Python", "Jupyter Notebook", "IPython", "NumPy", "Qiskit", "Matplotlib", "Quantum Computing", "Shor's Algorithm", "Grover's Algorithm"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/quantum-computing" }
+        { label: "Repository", href: "https://github.com/mscheema02/quantum-computing" }
       ]
     },
     {
       name: "Command Executor",
       subtitle: "System command execution interface in C",
+      dates: "2023",
       bullets: [
-        "Built efficient command-line execution system",
-        "Process management and system-level programming",
-        "Memory-safe command parsing and execution"
+        "Command-line program that executes system commands using Unix system calls for process management",
+        "Implemented using fork() for process creation, execvp() for command execution, pipe() for inter-process communication, and getline() for input parsing",
+        "Accomplished command execution system as measured by successful command parsing and process execution by doing system call integration and process management"
       ],
-      skills: ["C", "Systems Programming", "Unix", "Process Management"],
+      skills: ["C", "Unix", "Linux", "System Calls", "pipe", "fork", "execvp", "getline"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/command-executor-c" }
+        { label: "Repository", href: "https://github.com/mscheema02/command-executor-c" }
       ]
     },
     {
       name: "Design Patterns in Java",
       subtitle: "Classic design patterns implementation",
+      dates: "2023",
       bullets: [
-        "Implemented creational, structural, and behavioral patterns",
-        "Demonstrated OOP principles and best practices",
-        "Clean, maintainable, and scalable code architecture"
+        "Implemented creational, structural, and behavioral design patterns",
+        "Demonstrated SOLID principles and OOP best practices for clean, maintainable architecture"
       ],
-      skills: ["Java", "OOP", "Design Patterns", "Software Architecture"],
+      skills: ["Java", "OOP", "Design Patterns", "SOLID Principles", "Software Architecture", "CSS", "HTML"],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/design-patterns-java" }
+        { label: "Repository", href: "https://github.com/mscheema02/design-patterns-java" }
       ]
     },
     {
       name: "Earnings Report PDF Scraper",
       subtitle: "Web scraping and financial data processing",
+      dates: "2023",
       bullets: [
-        "Scrapes earning reports",
-        "Parses the reports into a structured format for easy analysis",
-        "Efficient data collection and processing pipeline"
+        "Automated tool that extracts financial data from earnings report PDFs using web scraping and PDF parsing",
+        "Implemented using Selenium for web scraping, PDF parsing libraries for data extraction, and Pandas for data processing and structuring",
+        "Accomplished automated data extraction as measured by structured data output from PDFs by doing web scraping, PDF parsing, and data transformation"
       ],
-      skills: ["Python", "Web Scraping", "Data Processing", "Automation"],
+      skills: ["Python", "Web Scraping", "Data Processing", "Automation", "Selenium", "urlib", "Pandas", ],
       links: [
-        { label: "Repo", href: "https://github.com/mscheema02/ER_scraper" }
+        { label: "Repository", href: "https://github.com/mscheema02/ER_scraper" }
       ]
     }
   ],
@@ -115,7 +167,16 @@ export const profile = {
         "Identified defects and improved product quality",
         "Created test scenarios and performed requirement analysis"
       ],
-      skills: ["Selenium", "Quality Assurance", "Testing", "Requirements Analysis"]
+      skills: ["Selenium", "Selenium WebDriver", "Quality Assurance", "Testing", "Requirements Analysis", "WAVE Evaluation Tool", "Web Accessibility Testing", "ALM", "Jira", "SharePoint", "Planview Enterprise", "Git", "GitHub", "VSCode", "Python", "JavaScript", "Microsoft Teams", "Microsoft Outlook", "Microsoft Excel"]
+    },
+    {
+      role: "Researcher",
+      company: "Lassonde Motorsports",
+      dates: "Jan 2022 — Apr 2022",
+      bullets: [
+        "Led research on integrating active aerodynamics to the vehicle for better handling, braking, and improved fuel efficiency"
+      ],
+      skills: ["Research", "Aerodynamics", "Vehicle Dynamics", "Data Analysis"]
     },
     {
       role: "Software Team Member",
@@ -132,35 +193,57 @@ export const profile = {
   education: [
     {
       degree: "B.Sc., Hons. Computer Science",
+      certificates: "Bergeron Entrepreneurs in Science & Technology (BEST) Certificate in Technology Entrepreneurship, Entrepreneurship/Entrepreneurial Studies",
       school: "York University",
       dates: "2020 — 2026",
       bullets: [
-        "Relevant coursework or achievements",
-        "GPA or honors if applicable"
+        "Advanced Data Structures",
+        "Operating Systems",
+        "Introduction to Database Management Systems",
+        "Advanced Object Oriented Programming",
+        "Introduction to Robotics",
+        "Quantum Computing"
       ],
-      skills: ["Mathematics", "Computer Science"]
+      skills: ["Discrete Mathematics", "Computer Science", "Java", "C", "Linux", "Quantum Math", "Python"]
+    },
+    {
+      degree: "High School Diploma",
+      certificates: "Ontario Scholar",
+      school: "Cardinal Ambrozic Catholic Secondary School",
+      dates: "2016 — 2020",
+      bullets: [
+      ]
     }
   ],
   skills: [
-    "Python",
-    "Java",
-    "C",
-    "Machine Learning",
-    "Deep Learning",
-    "CNN",
-    "Robotics",
-    "SLAM",
-    "Quantum Computing",
-    "Design Patterns",
-    "Algorithms",
-    "TensorFlow",
-    "NumPy",
-    "Pandas",
-    "Jupyter",
-    "React",
-    "JavaScript",
-    "TypeScript",
-    "CSS",
-    "Git"
+    "Python", "Python 3", "Java", "C", "C++", "JavaScript", "ES6+", "TypeScript", "HTML", "CSS", "CSS3",
+    "React", "React Hooks", "React Router DOM", "React Switch", "React Hot Toast", "Zustand", "Vite", "ESLint", "PostCSS", "Autoprefixer",
+    "Tailwind CSS", "DaisyUI", "Lucide React",
+    "Node.js", "Express.js", "Axios",
+    "AWS Amplify", "AWS EC2", "AWS VPC", "AWS API Gateway", "AWS Lambda", "AWS DynamoDB", "AWS Route 53",
+    "Supabase", "PostgreSQL", "Valkey", "Redis", "ioredis", "SQLite", "DynamoDB",
+    "JWT", "jsonwebtoken", "bcryptjs", "Cookie Parser", "Cookie-based Authentication",
+    "WebSockets", "ws", "WebSocket Real-time Communication",
+    "Stripe", "Stripe.js", "Webhook Processing", "Subscription Management",
+    "Cloudinary", "UUID", "PM2", "Nodemon",
+    "FastAPI", "Uvicorn", "Pydantic", "Xvfb",
+    "RESTful API", "Microservices Architecture", "Middleware Pattern", "Service Layer Pattern",
+    "Caching Strategy", "Error Handling", "Environment-based Configuration", "CORS Configuration",
+    "Machine Learning", "Deep Learning", "CNN", "TensorFlow", "Keras", "scikit-learn", "imbalanced-learn",
+    "NumPy", "Pandas", "Matplotlib", "Jupyter Notebook", "Jupyter", "IPython", "Google Colab", "ucimlrepo",
+    "Robotics", "SLAM", "ROS2", "ROS2 Messages", "Gazebo", "OpenCV", "cv_bridge", "Inverse Kinematics", "imutils",
+    "Quantum Computing", "Qiskit", "Shor's Algorithm", "Grover's Algorithm", "Quantum Math",
+    "VMWare Workstation Pro", "Ubuntu 22.04",
+    "Design Patterns", "SOLID Principles", "OOP", "Software Architecture",
+    "Algorithms", "Advanced Data Structures", "Operating Systems", "Database Management Systems",
+    "System Calls", "pipe", "fork", "execvp", "getline",
+    "Web Scraping", "Data Processing", "Automation", "Selenium", "Selenium WebDriver", "urlib",
+    "Quality Assurance", "Testing", "Requirements Analysis", "WAVE Evaluation Tool", "Web Accessibility Testing",
+    "ALM", "Jira", "SharePoint", "Planview Enterprise", "Git", "GitHub", "GitLab", "VSCode",
+    "Microsoft Teams", "Microsoft Outlook", "Microsoft Excel",
+    "Research", "Aerodynamics", "Vehicle Dynamics", "Data Analysis",
+    "Arduino", "Embedded Systems", "Hardware Integration", "CD74HC4067M",
+    "Computer Science", "Discrete Mathematics",
+    "Unix", "Linux"
   ]
 };
