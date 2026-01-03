@@ -18,9 +18,8 @@ export const profile = {
         subtitle: "HTML extraction tool for Data Analysis and Monitoring",
         dates: "2024 - Current",
         bullets: [
-            "I designed a  full web application (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) for max control, flexibility, cost-effectiveness, and scalability",
+            "I designed a  full web application (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) and Stripe for max control, flexibility, cost-effectiveness, and scalability",
             "Website allows users to extract HTML content from any website continously (allowing for monitoring of changes without being restricted), users can save the extracted HTML into a .html file  or directly upload to large context LLM for further processing and analysis",
-            "Designed to facilitate LLM-based analysis by providing clean HTML output that can be directly input into language models for information extraction and analysis",
             "Refer to Github Repository for diagrams and more details"
         ],
         skills: [
@@ -51,10 +50,14 @@ export const profile = {
         subtitle: "Personal Website for Portfolio and Projects",
         dates: "2023 - Current",
         bullets: [
-          "Personal Website for Portfolio and Projects",
-          "Designed to showcase my skills and projects in a clean and organized manner",
+          "Personal Website",
+          "Designed to showcase skills, projects, experience, and education in a simple and organized manner with a skill query system",
         ],
-        skills: ["Web Development", "HTML", "CSS", "JavaScript"],
+        skills: [
+          "React", "JavaScript", "ES6+", "HTML5", "CSS3",
+          "Vite", "ESLint", "npm", "nvm", "Github",
+          "AWS S3", "AWS CloudFront", "AWS Route 53", "AWS Certificate Manager", 
+        ],
         links: [
             { label: "Website", href: "https://www.manvirsinghcheema.com" },
             { label: "Repository", href: "https://github.com/mscheema02/personal-website" }
@@ -65,11 +68,11 @@ export const profile = {
       subtitle: "ML algorithms and data analysis implementations",
       dates: "2025",
       bullets: [
-        "Machine learning project implementing classification and regression models for data analysis using scikit-learn and Jupyter notebooks",
-        "Built data preprocessing pipelines with feature engineering, handled imbalanced datasets using SMOTE resampling, and evaluated models with cross-validation",
+        "Machine learning project implementing classification and regression models for data analysis using scikit-learn on Jupyter notebooks",
+        "Built data preprocessing pipelines with feature engineering, handled imbalanced datasets using SMOTE resampling, and evaluated multiple models (Random Forest, Logistic Regression, K-Nearest Neighbors, Support Vector Machine, and Gradient Boosting) with cross-validation",
         "Accomplished accurate predictions as measured by model performance metrics by doing data preprocessing, feature engineering, and hyperparameter tuning"
       ],
-      skills: ["Python 3", "Jupyter Notebook", "Google Colab", "NumPy", "Pandas", "scikit-learn", "imbalanced-learn", "Matplotlib", "ucimlrepo"],
+      skills: ["Python 3", "Jupyter Notebook", "Google Colab", "NumPy", "Pandas", "scikit-learn", "imbalanced-learn", "Matplotlib", "ucimlrepo", "Random Forest", "Logistic Regression", "K-Nearest Neighbors", "Support Vector Machine", "Gradient Boosting"],
       links: [
         { label: "Repository", href: "https://github.com/mscheema02/applied-machine-learning" }
       ]
@@ -79,11 +82,11 @@ export const profile = {
       subtitle: "Robotics navigation using SLAM and RRT pathfinding",
       dates: "2024",
       bullets: [
-        "Robotics navigation system enabling autonomous robot pathfinding in unknown environments using ROS2 and Gazebo simulations",
-        "Implemented SLAM for simultaneous mapping and localization, and RRT algorithms for path planning using Python with ROS2 message handling",
+        "Robotics navigation system enabling autonomous robot pathfinding in unknown environments using ROS2 and Gazebo simulations on Ubuntu 22.04",
+        "Implemented SLAM for simultaneous mapping and localization, and RRT* algorithm for path planning using Python with ROS2 message handling",
         "Accomplished autonomous navigation as measured by successful path planning and obstacle avoidance by doing real-time map generation and optimal path finding"
       ],
-      skills: ["VMWare Workstation Pro", "Ubuntu 22.04", "ROS2", "Gazebo", "Python 3", "NumPy", "OpenCV", "ROS2 Messages"],
+      skills: ["VMWare Workstation Pro", "Ubuntu 22.04", "ROS2", "Gazebo", "Python 3", "NumPy", "OpenCV", "ROS2 Messages", "SLAM", "RRT*"],
       links: [
         { label: "Repository", href: "https://github.com/mscheema02/slam-rrt-navigation" }
       ]
@@ -93,8 +96,8 @@ export const profile = {
       subtitle: "CNN-based control system with kinematic models",
       dates: "2024",
       bullets: [
-        "Autonomous vehicle control system using deep learning CNNs integrated with inverse kinematics for end-to-end driving control in ROS2 and Gazebo",
-        "Trained CNN models with TensorFlow/Keras on sensor data, processed images with OpenCV, and integrated with ROS2 for real-time vehicle control",
+        "Autonomous vehicle control system using deep learning CNN for end-to-end driving control in ROS2 and Gazebo simulations on Ubuntu 22.04 with VMWare Workstation Pro",
+        "Trained CNN models with TensorFlow/Keras on sensor data, collected images, processed images with OpenCV, trained the model, and then integrated it with ROS2 for real-time vehicle control",
         "Accomplished autonomous driving control as measured by successful vehicle navigation and steering commands by doing CNN-based perception and kinematic control integration"
       ],
       skills: ["VMWare Workstation Pro", "Ubuntu 22.04", "ROS2", "Gazebo", "Python 3", "TensorFlow", "Keras", "OpenCV", "cv_bridge", "Inverse Kinematics", "NumPy", "scikit-learn", "imutils"],
@@ -107,10 +110,10 @@ export const profile = {
       subtitle: "Quantum algorithms and gate implementations",
       dates: "2024",
       bullets: [
-        "Implemented the notorious Shor's and Grover's algorithms using Qiskit for quantum circuit design and simulation",
+        "Implemented the notorious Shor's and Grover's algorithms using Qiskit for quantum circuit design and simulation, on Google Colab",
         "Built quantum circuits with gate operations, simulated quantum states using Qiskit Aer, and visualized probability distributions with Matplotlib",
       ],
-      skills: ["Python", "Jupyter Notebook", "IPython", "NumPy", "Qiskit", "Matplotlib", "Quantum Computing", "Shor's Algorithm", "Grover's Algorithm"],
+      skills: ["Python", "Jupyter Notebook", "IPython", "NumPy", "Qiskit", "Matplotlib", "Quantum Computing", "Shor's Algorithm", "Grover's Algorithm", "Google Colab"],
       links: [
         { label: "Repository", href: "https://github.com/mscheema02/quantum-computing" }
       ]
@@ -121,7 +124,7 @@ export const profile = {
       dates: "2023",
       bullets: [
         "Command-line program that executes system commands using Unix system calls for process management",
-        "Implemented using fork() for process creation, execvp() for command execution, pipe() for inter-process communication, and getline() for input parsing",
+        "Implemented using only system calls such as fork() for process creation, execvp() for command execution, pipe() for inter-process communication, and getline() for input parsing",
         "Accomplished command execution system as measured by successful command parsing and process execution by doing system call integration and process management"
       ],
       skills: ["C", "Unix", "Linux", "System Calls", "pipe", "fork", "execvp", "getline"],
@@ -134,10 +137,10 @@ export const profile = {
       subtitle: "Classic design patterns implementation",
       dates: "2023",
       bullets: [
-        "Implemented creational, structural, and behavioral design patterns",
+        "Created a Parking Managaement System Java app using Java server pages and implemented creational, structural, and behavioral design patterns",
         "Demonstrated SOLID principles and OOP best practices for clean, maintainable architecture"
       ],
-      skills: ["Java", "OOP", "Design Patterns", "SOLID Principles", "Software Architecture", "CSS", "HTML"],
+      skills: ["Java", "OOP", "Design Patterns", "SOLID Principles", "Software Architecture", "CSS", "HTML", "Java Server Pages", "SQL"],
       links: [
         { label: "Repository", href: "https://github.com/mscheema02/design-patterns-java" }
       ]
@@ -216,12 +219,12 @@ export const profile = {
     }
   ],
   skills: [
-    "Python", "Python 3", "Java", "C", "C++", "JavaScript", "ES6+", "TypeScript", "HTML", "CSS", "CSS3",
+    "Python", "Python 3", "Java", "C", "C++", "JavaScript", "ES6+", "HTML", "HTML5", "CSS", "CSS3",
     "React", "React Hooks", "React Router DOM", "React Switch", "React Hot Toast", "Zustand", "Vite", "ESLint", "PostCSS", "Autoprefixer",
     "Tailwind CSS", "DaisyUI", "Lucide React",
     "Node.js", "Express.js", "Axios",
-    "AWS Amplify", "AWS EC2", "AWS VPC", "AWS API Gateway", "AWS Lambda", "AWS DynamoDB", "AWS Route 53",
-    "Supabase", "PostgreSQL", "Valkey", "Redis", "ioredis", "SQLite", "DynamoDB",
+    "AWS Amplify", "AWS EC2", "AWS VPC", "AWS API Gateway", "AWS Lambda", "AWS DynamoDB", "AWS Route 53", "AWS S3", "AWS CloudFront", "AWS Certificate Manager",
+    "Supabase", "PostgreSQL", "Valkey", "Redis", "ioredis", "SQLite",
     "JWT", "jsonwebtoken", "bcryptjs", "Cookie Parser", "Cookie-based Authentication",
     "WebSockets", "ws", "WebSocket Real-time Communication",
     "Stripe", "Stripe.js", "Webhook Processing", "Subscription Management",
@@ -229,13 +232,14 @@ export const profile = {
     "FastAPI", "Uvicorn", "Pydantic", "Xvfb",
     "RESTful API", "Microservices Architecture", "Middleware Pattern", "Service Layer Pattern",
     "Caching Strategy", "Error Handling", "Environment-based Configuration", "CORS Configuration",
-    "Machine Learning", "Deep Learning", "CNN", "TensorFlow", "Keras", "scikit-learn", "imbalanced-learn",
-    "NumPy", "Pandas", "Matplotlib", "Jupyter Notebook", "Jupyter", "IPython", "Google Colab", "ucimlrepo",
-    "Robotics", "SLAM", "ROS2", "ROS2 Messages", "Gazebo", "OpenCV", "cv_bridge", "Inverse Kinematics", "imutils",
+    "Deep Learning", "CNN", "TensorFlow", "Keras", "scikit-learn", "imbalanced-learn",
+    "NumPy", "Pandas", "Matplotlib", "Jupyter Notebook", "IPython", "Google Colab", "ucimlrepo",
+    "Random Forest", "Logistic Regression", "K-Nearest Neighbors", "Support Vector Machine", "Gradient Boosting",
+    "Robotics", "SLAM", "ROS2", "ROS2 Messages", "Gazebo", "OpenCV", "cv_bridge", "Inverse Kinematics", "imutils", "RRT*",
     "Quantum Computing", "Qiskit", "Shor's Algorithm", "Grover's Algorithm", "Quantum Math",
     "VMWare Workstation Pro", "Ubuntu 22.04",
     "Design Patterns", "SOLID Principles", "OOP", "Software Architecture",
-    "Algorithms", "Advanced Data Structures", "Operating Systems", "Database Management Systems",
+    "Advanced Data Structures", "Operating Systems", "Database Management Systems",
     "System Calls", "pipe", "fork", "execvp", "getline",
     "Web Scraping", "Data Processing", "Automation", "Selenium", "Selenium WebDriver", "urlib",
     "Quality Assurance", "Testing", "Requirements Analysis", "WAVE Evaluation Tool", "Web Accessibility Testing",
@@ -244,6 +248,7 @@ export const profile = {
     "Research", "Aerodynamics", "Vehicle Dynamics", "Data Analysis",
     "Arduino", "Embedded Systems", "Hardware Integration", "CD74HC4067M",
     "Computer Science", "Discrete Mathematics",
-    "Unix", "Linux"
+    "Unix", "Linux",
+    "npm", "nvm", "Java Server Pages", "SQL"
   ]
 };
