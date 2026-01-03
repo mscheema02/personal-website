@@ -6,8 +6,7 @@ export const profile = {
   email: "manvircheema02@gmail.com",
   links: [
     { label: "GitHub", href: "https://github.com/mscheema02" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/manvir-cheema-029b901b1/" },
-    { label: "Resume (PDF)", href: "/resume.pdf" }
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/manvir-cheema-029b901b1/" }
   ],
   about: [
     "Hey there! I'm Manvir Singh Cheema. I build simple, reliable and organized systems.",
@@ -18,7 +17,7 @@ export const profile = {
         subtitle: "HTML extraction tool for Data Analysis and Monitoring",
         dates: "2024 - Current",
         bullets: [
-            "I designed a  full web application (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) and Stripe for max control, flexibility, cost-effectiveness, and scalability",
+            "I built a full web application end-to-end myself (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) and Stripe for max control, flexibility, cost-effectiveness, and scalability",
             "Website allows users to extract HTML content from any website continously (allowing for monitoring of changes without being restricted), users can save the extracted HTML into a .html file  or directly upload to large context LLM for further processing and analysis",
             "Refer to Github Repository for diagrams and more details"
         ],
