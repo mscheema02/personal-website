@@ -15,7 +15,7 @@ export const profile = {
     {
         name: "Url Response",
         subtitle: "HTML extraction tool for Data Analysis and Monitoring",
-        dates: "2024 - Current",
+        dates: "2024 - Present",
         bullets: [
             "I built a full web application end-to-end myself (SERN Stack plus more) without depending on ANY paid API service besides Supabase (3-2-1 backup rule) and Stripe for max control, flexibility, cost-effectiveness, and scalability",
             "Website allows users to extract HTML content from any website continously (allowing for monitoring of changes without being restricted), users can save the extracted HTML into a .html file  or directly upload to large context LLM for further processing and analysis",
@@ -47,7 +47,7 @@ export const profile = {
     {
         name: "Personal Website",
         subtitle: "Personal Website for Portfolio and Projects",
-        dates: "2023 - Current",
+        dates: "2023 - Present",
         bullets: [
           "Personal Website",
           "Designed to showcase skills, projects, experience, and education in a simple and organized manner with a skill query system",
