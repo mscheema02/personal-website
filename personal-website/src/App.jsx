@@ -410,6 +410,8 @@ export default function App() {
                       )}
                     </>
                   )}
+
+                  {job.links?.length ? <LinkRow links={job.links} /> : null}
                 </article>
               );
             })}

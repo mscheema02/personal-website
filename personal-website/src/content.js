@@ -2,7 +2,7 @@ export const profile = {
   initials: "MSC",
   name: "",
   title: "",
-  location: "",
+  location: "Toronto, ON",
   email: "manvircheema02@gmail.com",
   links: [
     { label: "GitHub", href: "https://github.com/mscheema02" },
@@ -37,7 +37,9 @@ export const profile = {
           "WebSocket Real-time Communication", "Caching Strategy", "Error Handling",
           "Environment-based Configuration", "Subscription Management", "CORS Configuration",
           "Cookie-based Authentication", "Webhook Processing",
-          "GitLab", "SOLID Principles", "Design Patterns"
+          "GitLab", "SOLID Principles", "Design Patterns",
+          "npm", "nvm",
+          "Adaptability", "Attention to Detail",
         ],
         links: [
             { label: "Website", href: "https://www.urlresponse.com" },
@@ -161,6 +163,18 @@ export const profile = {
   ],
   experience: [
     {
+      role: "Lead Software Engineer",
+      company: "Driver Zone Golf",
+      dates: "2024 — Present",
+      bullets: [
+        "Built an active production-ready customer booking and payments experience. With end-to-end authentication, scheduling, and checkout flows, done by establishing and coordinating business requirements between the CEO and team members to build as well as personally building out a lot of the functionality of the web application using Next.js, Tailwind CSS, Hostinger, Stripe, Google Firebase, MongoDB and additional third-party APIs, to implement the login/register, scheduling functionality, and rewards system."
+      ],
+      skills: ["Next.js", "React", "Tailwind CSS", "Hostinger", "Stripe", "Stripe Pricing Table", "Google Firebase", "MongoDB", "React-Fast-Marquee", "Toastify", "Google Tag Manager", "Google Analytics", "GA4", "Google APIs", "Google Site Verification", "npm", "nvm", "Docker"],
+      links: [
+        { label: "Website", href: "https://driverzonegolf.ca/" }
+      ]
+    },
+    {
       role: "Application Programmer Analyst",
       company: "Ontario Ministry of Education",
       dates: "May 2023 — Dec 2023",
@@ -219,15 +233,17 @@ export const profile = {
   ],
   skills: [
     "Python", "Python 3", "Java", "C", "C++", "JavaScript", "ES6+", "HTML", "HTML5", "CSS", "CSS3",
-    "React", "React Hooks", "React Router DOM", "React Switch", "React Hot Toast", "Zustand", "Vite", "ESLint", "PostCSS", "Autoprefixer",
-    "Tailwind CSS", "DaisyUI", "Lucide React",
+    "React", "Next.js", "React Hooks", "React Router DOM", "React Switch", "React Hot Toast", "React-Fast-Marquee", "Toastify", "Zustand", "Vite", "ESLint", "PostCSS", "Autoprefixer",
+    "Tailwind CSS", "DaisyUI", "Lucide React", "Communication", "Teamwork", "Leadership", "Problem Solving", "Adaptability", "Flexibility", "Organizational Skills", "Attention to Detail", "Team Productivity", "Team Development",
     "Node.js", "Express.js", "Axios",
     "AWS Amplify", "AWS EC2", "AWS VPC", "AWS API Gateway", "AWS Lambda", "AWS DynamoDB", "AWS Route 53", "AWS S3", "AWS CloudFront", "AWS Certificate Manager",
     "Supabase", "PostgreSQL", "Valkey", "Redis", "ioredis", "SQLite",
     "JWT", "jsonwebtoken", "bcryptjs", "Cookie Parser", "Cookie-based Authentication",
     "WebSockets", "ws", "WebSocket Real-time Communication",
-    "Stripe", "Stripe.js", "Webhook Processing", "Subscription Management",
-    "Cloudinary", "UUID", "PM2", "Nodemon",
+    "Stripe", "Stripe.js", "Stripe Pricing Table", "Webhook Processing", "Subscription Management",
+    "Google Firebase", "MongoDB", "Hostinger",
+    "Google Tag Manager", "Google Analytics", "GA4", "Google APIs", "Google Site Verification",
+    "Cloudinary", "UUID", "PM2", "Nodemon", "Docker",
     "FastAPI", "Uvicorn", "Pydantic", "Xvfb",
     "RESTful API", "Microservices Architecture", "Middleware Pattern", "Service Layer Pattern",
     "Caching Strategy", "Error Handling", "Environment-based Configuration", "CORS Configuration",
